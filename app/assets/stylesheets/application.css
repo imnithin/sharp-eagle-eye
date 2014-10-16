@@ -1,0 +1,619 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+*= require owl.carousel
+*= require owl.theme
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: Tahoma;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+	 color:#FFFFE2;
+}
+a:hover{
+    color: #ffffff;
+    }
+
+
+
+.page {
+
+	margin :0 auto;
+	width: 100%;
+}
+
+.footer2_area_sociallinks > a:hover {
+    opacity: 0.7;
+}
+
+.header {
+    float: left;
+    width: 100%;
+ background: #fff;
+ height: 238px;
+	
+}
+
+.header_area{
+    margin: 0 auto;
+    width: 1024px;	
+	  
+}
+
+.header_1{
+  margin: 0 auto;
+	 float: left;
+    width: 1024px;
+	 background: none repeat scroll 0 0 #ffffff;
+}
+.logo_area{
+	float: left;
+    height: 100px;
+    margin-top: -20px;
+    padding-bottom: 76px;
+    padding-top: 20px;
+    width: 400px;
+	background:#fff;
+	}
+.header_area_left{
+  
+    float: right;
+  
+    width: 266px;
+
+}
+/* .login_area{
+	 background-color: #333333;
+    border-radius: 7px;
+    color: white;
+    float: right;
+    font-size: 14px;
+    padding-bottom: 11px;
+    text-align: center;
+    width: 70px;
+} */
+.call_us{
+margin-top: 10px;
+float:right;
+}
+
+.Menu{
+	float:left;
+}
+
+#nav {
+     clear: both;
+    height: 13px;
+    margin: 0 auto
+
+}
+
+#nav li a {
+   color: #ffffff;
+    float: left;
+    font-size: 11pt;
+    height: 32px;
+    padding-left: 26px;
+    padding-right: 33px;
+    padding-top: 18px;
+ 
+}
+
+#nav li a:hover {
+    background: none repeat scroll 0 0 #ffa500;
+}
+
+#nav ul {
+    background: none repeat scroll 0 0 #eaeaeb;
+    border: 0 none;
+    padding-bottom: 3px;
+    width: 191px;
+}
+#nav ul, #nav div {
+    left: -10000px;
+    position: absolute;
+    top: 27px;
+    width: 15em;
+}
+.menu_area{
+    background-color: #b20000;
+    float: left;
+    width: 100%;
+}
+.menu{
+	 /* background-color: #b20000;*/
+      height: 50px;
+    margin: 0 auto;
+    width: 1024px;
+}
+
+form {
+    margin-left: 162px;
+}
+.main_banner_area{
+    background: url(../images/content-bg.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    width: 100%;
+}
+.main_banner{	 
+    margin: 0 auto;
+    width: 100%;
+}
+
+.Advetising_area {
+    float: left;
+    width: 100%;
+}
+
+.Advetising {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.area1 {
+    float: left;
+    padding-top: 50px;
+    width: 60%;
+} 
+
+.p_area1 {
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.img_part {
+    float: left;
+    padding-top: 20px;
+}
+.h1_txt{
+	font-weight:bold;
+	font-size: 11pt;
+}
+.img_part1 {
+	float:left;
+}
+
+.h1_content3 {
+    font-weight: bold;
+}
+
+.img_part1_div {
+       float: left;
+    padding-bottom: 4px;
+    padding-top: 15px;
+}
+
+.img_part1_div > p {
+    color: #606060;
+    font-size: 9pt;
+    padding-left: 5px;
+    padding-top: 6px;
+}
+
+.content1 .img_part1_div p {
+    margin-left: 75px;
+    width: 520px;
+}
+
+.content1 .img_part1_div h1 {
+    margin-left: 80px;
+    width: 450px;
+}
+
+.border > h1 {
+    font-weight: bold;
+}
+.border{
+	float:left; border-right:1px solid #ccc;
+}
+.area2{
+    float: left;
+     
+    padding-top: 4%;
+    width: 404px;
+}
+.img_part2{
+	float:left;
+	}
+  
+	
+.border2 {
+    border-bottom: 1px solid #ccc;
+    padding-top: 30px;
+}
+.border3 {
+    border-bottom: 1px solid #ccc;
+    padding-top: 30px;
+}
+.area3{
+    float: left;
+    padding-top: 30px;	 
+}
+
+.img_part3 {
+	 float: left;
+	 padding-right: 16px;
+}
+
+.p_content3 {
+    color: #606060;
+    font-size: 13px;
+    padding-top: 6px;
+}
+
+.search {
+	
+  background-color: #E7E7E7;
+    border-radius: 15px;
+    float: left;
+    padding-left: 13px;
+    width: 172px;
+}
+
+.right_area{
+    float: right;
+    height: auto;
+    margin-top: 35px;
+    width: 400px;
+}
+.Table_area{
+	float:left;
+	width:100%;	
+}
+.Table_content{
+	margin:0 auto;
+	width:1024px;
+}
+
+.Table_content > h1 {
+    font-weight: bold;
+    padding-top: 30px;
+}
+html {
+    background: none repeat scroll 0 0 #031219;
+}
+
+table, td {
+    background-color: #0b3754;
+    /* border: 1px solid #fff; */
+    border-collapse: collapse;
+	height: 25px;
+}
+.first_td , thead tr{
+	background-color: #e2f4f6;
+}
+thead tr th {
+	text-align: left;
+	font-weight: bold;
+	height: 25px;
+	padding-left: 15px;
+    padding-top: 15px;
+}
+table {
+	width: 1005px;
+	 font-size: 12px;
+	 border-spacing: 0;
+     margin-top: 0px;
+	 border-bottom:1px solid #fff;
+}
+tbody tr td{
+	padding-left: 15px;
+    padding-top: 15px;
+}
+
+.table > p {
+    font-size: 9pt;
+    padding-top: 14px;
+}
+
+.borderLine {
+    border-bottom: 1px solid #e6e6e6;
+    padding-top: 42px;
+}
+
+.table {
+    border-bottom: 1px solid #e6e6e6;
+    float: left;
+    padding-bottom: 10px;
+	 width: 100%;
+}
+
+
+.readmore12 {
+    background: none repeat scroll 0 0 #ff0000;
+    border-radius: 6px;
+    height: 27px;
+    margin-left: 0;
+    margin-top: 7px;
+    padding-left: 10px;
+    padding-top: 6px;
+    width: 105px;
+}
+
+.readmore {
+  background: none repeat scroll 0 0 #ff0000;
+    border-radius: 6px;
+    height: 27px;
+    margin-left: 0;
+    margin-top: 7px;
+    padding-left: 10px;
+    padding-top: 6px;
+    width: 105px;
+}
+
+/*
+tech support area
+
+*/
+
+.techsupport_area{
+  
+margin :0 auto;
+width :100%;
+}
+
+.techsupport{
+	margin:0 auto;
+	width:1063px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.techsupport_content{
+
+    float: right;
+    margin: -53px auto 0 103px;
+
+
+}
+.tech24{
+   background: none repeat scroll 0 0 #093653;
+    float: left;
+    height: 212px;
+    margin: 0 auto;
+    width: 61%;
+
+}
+
+.techsupport_blog{
+  background: none repeat scroll 0 0 #093653;
+    border-left: 1px solid #cccccc;
+    float: right;
+    height: 211px;
+    margin-right: 19px;
+    width: 37%;
+
+}
+.techsupport_comingsoon{
+
+margin: 0 auto;
+float:right;
+width:80%;	
+height:20%;
+margin-top:10px;
+}
+
+.company_logo_area{
+  padding-top: 10px;
+	float:left;
+	width:100%;
+	}
+
+.company_logo{
+	margin:0 auto;
+	width:1024px;
+}
+.copmany_space{
+
+    display: inline;
+    margin-left: 128px;
+
+}
+
+	.footer1{
+	  background-color: #04141e;
+    float: left;
+    height: 200px;
+    padding-top: 30px;
+    width: 100%;
+	}
+
+	.footer_image{
+
+    float: right;
+    margin-top: 100px;
+	
+	}
+	
+	.footer1_area{
+	margin:0 auto;
+	width:1024px;
+	
+	  height: 197px;
+   
+
+}
+
+.our_company{
+   
+
+    margin: 0 auto;
+    width: 22%;
+	float:left;
+	
+
+}
+.support{
+   
+    margin: 0 auto;
+    width: 22%;
+	float:left;
+	margin-left:10px;
+
+}
+.service{
+
+
+    margin: 0 auto;
+	margin-left:10px;
+    width: 22%;
+	float:left;
+
+}
+.mainlinks{
+ 
+  
+    margin: 0 auto;
+    width: 22%;
+	float:left;
+	 margin-left:10px;
+
+}
+.footer1_space{
+
+    display: inline;
+    margin-left: 10px;
+
+}
+
+.footer2
+{    
+	float:left;
+	width:100%; 
+ background-color: #25292A;
+   
+}
+.footer2_area{
+ 
+    margin: 0 auto;
+    width: 1024px;
+
+}
+.footer2_area_copy
+{
+
+    float: left;
+  
+    margin: 0 auto;
+    width: 60%;
+}
+
+.footer2_area_sociallinks
+{
+
+   padding-top: 16px;
+    float: right;
+    margin: 0 auto;
+       width: 14%;
+}
+
+.readmore > a:hover {
+    opacity: 0.7;
+}
+
+
+.slider-wrap {
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+label {
+    color: #ffffff;
+}
+
+ .stripNav {
+    bottom: 10px;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    z-index: 100;
+}
+ .stripNav a {
+    background: -moz-linear-gradient(center top , #444444, #999999) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 solid #bbe3f2;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    font-size: 0;
+    font-weight: normal;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 2px !important;
+    opacity: 0.6;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    width: 16px;
+} 
+
+
+ .stripNavL, .stripNavR {
+    opacity: 0.7;
+    position: absolute;
+    text-indent: -9000em;
+    top: 120px;
+    width: 20px;
+    z-index: 120;
+}

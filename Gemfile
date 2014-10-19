@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'quiet_assets'
-gem  'compass-rails'
+gem 'compass-rails'
 gem 'owlcarousel-rails'
 
 
@@ -41,5 +41,4 @@ gem 'owlcarousel-rails'
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
-
+gem 'byebug', group: [:development, :test]

@@ -193,7 +193,7 @@ form {
     margin-left: 162px;
 }
 .main_banner_area{
-    background: url(../images/content-bg.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/assets/content-bg.jpg) repeat scroll 0 0 rgba(0, 0, 0, 0);
     float: left;
     width: 100%;
 }

@@ -1,3 +1,5 @@
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
 <div class="page">
 	<div class="header">
 		<div class="header_area">
@@ -5,9 +7,9 @@
 				<div class="logo_area">
 					<img src="/assets/logo.png" alt="">
 				</div>
-				
-				
-				
+
+
+
 				<div class="header_area_left">
 
 
@@ -77,75 +79,75 @@
 			</div>
 
 
-<form name="htmlform" method="post" action="html_form_send.php">
-<table width="450px">
-</tr>
-<tr>
- <td valign="top">
-  <label for="first_name">First Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="first_name" maxlength="50" size="30">
- </td>
-</tr>
- 
-<tr>
- <td valign="top">
-  <label for="last_name">Last Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="last_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email">Email Address *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="email" maxlength="80" size="30">
- </td>
- 
-</tr>
-<tr>
- <td valign="top">
-  <label for="telephone">Telephone Number</label>
- </td>
- <td valign="top">
-  <input  type="text" name="telephone" maxlength="30" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments">Comments *</label>
- </td>
- <td valign="top">
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- </td>
- 
-</tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">   ( <a href="http://www.freecontactform.com/html_form.php">HTML Form</a> )
- </td>
-</tr>
-</table>
-</form>
+			<%= form_tag ('/contact/send_mail'), id: "email" do %>
+			<table width="450px">
+			</tr>
+			<tr>
+				<td valign="top">
+					<label for="first_name">First Name *</label>
+				</td>
+				<td valign="top">
+					<input  type="text" name="contact_us[first_name]" maxlength="50" size="30">
+				</td>
+			</tr>
+
+			<tr>
+				<td valign="top">
+					<label for="last_name">Last Name *</label>
+				</td>
+				<td valign="top">
+					<input  type="text" name="contact_us[last_name]" maxlength="50" size="30">
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">
+					<label for="email">Email Address *</label>
+				</td>
+				<td valign="top">
+					<input  type="text" name="contact_us[email]" maxlength="80" size="30">
+				</td>
+
+			</tr>
+			<tr>
+				<td valign="top">
+					<label for="telephone">Telephone Number</label>
+				</td>
+				<td valign="top">
+					<input  type="text" name="contact_us[telephone]" maxlength="30" size="30">
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">
+					<label for="comments">Comments *</label>
+				</td>
+				<td valign="top">
+					<textarea  name="contact_us[comments]" maxlength="1000" cols="25" rows="6"></textarea>
+				</td>
+
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align:center">
+					<input type="submit" value="Submit"> 
+				</td>
+			</tr>
+		</table>
+		<% end %>
 
 
-	<div class="footer1"> 
-		<div class="footer1_area">
+		<div class="footer1"> 
+			<div class="footer1_area">
 
-			<div class="our_company">
-				<br>
-				<span style="color:#FFFFFF; font-size:15px; ">Our Company</span><br>
-				<span style="color:#FFFFFF; font-size:10px; font-weight:bold;">___________________________________</span>
-				<ul>
-					&nbsp;&nbsp;<span style="color:#FFFFFF; font-size:10px; ">
-					<a href=""><li>Company</li></a>
-					&nbsp;&nbsp;<a href=""><li>Meet the Team</li></a>
-					&nbsp;&nbsp;<a href=""><li>Network And DataCenter</li></a>
-					&nbsp;&nbsp;<a href=""><li>Technology Partner</li></a></span> 
-				</ul>
+				<div class="our_company">
+					<br>
+					<span style="color:#FFFFFF; font-size:15px; ">Our Company</span><br>
+					<span style="color:#FFFFFF; font-size:10px; font-weight:bold;">___________________________________</span>
+					<ul>
+						&nbsp;&nbsp;<span style="color:#FFFFFF; font-size:10px; ">
+						<a href=""><li>Company</li></a>
+						&nbsp;&nbsp;<a href=""><li>Meet the Team</li></a>
+						&nbsp;&nbsp;<a href=""><li>Network And DataCenter</li></a>
+						&nbsp;&nbsp;<a href=""><li>Technology Partner</li></a></span> 
+					</ul>
 
 						<!-- <br>
 						<span style="color:#FFFFFF; font-size:15px; ">Hosting Features & Addons</span><br>
@@ -258,3 +260,26 @@
 
 				</div>
 			</div>
+
+			<script type="text/javascript">
+				$('#email').validate({
+					rules:{
+						'first_name':{
+							required: true,
+							minlength: 3
+						},
+						'last_name':{
+							required: true
+						},
+						'email':{
+							required: true,
+							email: true
+						},
+						'comments':{
+							required: true,
+							minlength: 6
+						}
+					}
+				});
+			</script>
+

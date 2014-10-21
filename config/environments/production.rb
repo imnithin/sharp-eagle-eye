@@ -1,5 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  
+  EAGLE_EYE_URL = "http://sharp-eagle-eye.com"
+  EAGLE_EYE_URL = "http://50.63.202.39"
 
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -75,4 +78,20 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.default_url_options = {:host => '50.63.202.39'}
+  ActionMailer::Base.delivery_method = :sendmail
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+
+  config.action_mailer.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'gmail.com',
+    user_name:            'sharp.eagle.eye.detectives@gmail.com',
+    password:             'DETECTIVES321',
+    authentication:       'plain',
+    enable_starttls_auto: true
+  }
 end

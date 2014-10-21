@@ -1,4 +1,22 @@
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$("#owl-demo").owlCarousel({
+
+      autoPlay: 2000, //Set AutoPlay to 3 seconds
+
+      items : 3,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+
+  });
+
+	});
+</script>
+
 
 <div class="page">
 	<div class="header">
@@ -7,9 +25,9 @@
 				<div class="logo_area">
 					<img src="/assets/logo.png" alt="">
 				</div>
-
-
-
+				
+				
+				
 				<div class="header_area_left">
 
 
@@ -23,7 +41,7 @@
 						<a href="">User login</a>
 					</div> -->
 					<span style="color:#000; font-size:19px;">
-						<div class="call_us">CALL US 9590719164</div>
+						<div class="call_us">CALL US +(91)-80-40942861</div>
 					</span>
 				</div>
 
@@ -32,7 +50,6 @@
 			</div>							
 		</div>			
 	</div>
-
 	<div class="menu_area">
 		
 		<div class="menu">					 
@@ -77,63 +94,38 @@
 					</div> -->
 				</div>	
 			</div>
+			<div class="main_banner_area">
+			<div id="owl-demo">
+	<div> <%= image_tag("office2.jpg", size: "500x400")%></div>
+	<div> <%= image_tag("office1.jpg", size: "500x400")%> </div>
+	<div><%= image_tag("office3.jpg" , size: "500x400")%> </div>
+	<div> <%= image_tag("office4.jpg", size: "500x400")%> </div>
+	<div> <%= image_tag("office5.jpg", size: "500x400")%></div>
+	<div><%= image_tag("office6.jpg" , size: "500x400")%> </div>
+	<div><%= image_tag("office7.jpg" ,size: "500x400")%> </div>
+</div>
+				
+			</div>	
+
+			
 
 
-			<%= form_tag ('/contact/send_mail'), id: "email" do %>
-			<table width="450px">
-			</tr>
-			<tr>
-				<td valign="top">
-					<label for="first_name">First Name *</label>
-				</td>
-				<td valign="top">
-					<input  type="text" name="contact_us[first_name]" maxlength="50" size="30">
-				</td>
-			</tr>
-
-			<tr>
-				<td valign="top">
-					<label for="last_name">Last Name *</label>
-				</td>
-				<td valign="top">
-					<input  type="text" name="contact_us[last_name]" maxlength="50" size="30">
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<label for="email">Email Address *</label>
-				</td>
-				<td valign="top">
-					<input  type="text" name="contact_us[email]" maxlength="80" size="30">
-				</td>
-
-			</tr>
-			<tr>
-				<td valign="top">
-					<label for="telephone">Telephone Number</label>
-				</td>
-				<td valign="top">
-					<input  type="text" name="contact_us[telephone]" maxlength="30" size="30">
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">
-					<label for="comments">Comments *</label>
-				</td>
-				<td valign="top">
-					<textarea  name="contact_us[comments]" maxlength="1000" cols="25" rows="6"></textarea>
-				</td>
-
-			</tr>
-			<tr>
-				<td colspan="2" style="text-align:center">
-					<input type="submit" value="Submit"> 
-				</td>
-			</tr>
-		</table>
-		<% end %>
-
-
+		<!-- 
+		<div class="company_logo_area">
+			
+			<div class="company_logo">
+			
+				<img src="assets/Hurricane.jpg"><div class="copmany_space"></div>
+				<img src="assets/cpanel.jpg"><div class="copmany_space"></div>
+				<img src="assets/parallels_opt.png"><div class="copmany_space"></div>
+				<img src="assets/cloudstack.jpg"><div class="copmany_space"></div>
+				
+			</div>
+	
+		</div> -->
+		
+		
+		
 		<div class="footer1"> 
 			<div class="footer1_area">
 
@@ -163,7 +155,7 @@
 					<div class="footer1_space">
 					</div>
 
-					<div class="support">
+				<!-- 	<div class="support">
 						<br>
 						&nbsp;&nbsp;<span style="color:#FFFFFF; font-size:15px; ">Support</span><br>
 						<span style="color:#FFFFFF; font-size:10px; font-weight:bold;">___________________________________</span>
@@ -175,13 +167,13 @@
 							&nbsp;&nbsp;<a href=""><li>ABC</li></a>
 							&nbsp;&nbsp;<a href=""><li> ABC</li></a></span> 
 							<br>
-							<!-- <span style="color:#FFFFFF; font-size:15px;"><li> Telephone : +1 469 619 4582</li></span>  -->
+							<span style="color:#FFFFFF; font-size:15px;"><li> Telephone : +1 469 619 4582</li></span> 
 							
 						</ul>
 						<br>
-						<!-- <span style="color:#FFFFFF; font-size:10px; font-weight:bold;">___________________________________</span>	 -->					
+						<span style="color:#FFFFFF; font-size:10px; font-weight:bold;">___________________________________</span>						
 
-					</div>
+					</div> -->
 					<div class="footer1_space">
 					</div>
 					<div class="service">
@@ -227,9 +219,9 @@
 						
 								
 					</div> -->
-					<div class="footer_image">
+				<!-- 	<div class="footer_image">
 						<img src="assets/authq.jpg" height="70px" width="70px;" style="float:right;" >
-					</div>
+					</div> -->
 
 
 
@@ -244,7 +236,7 @@
 					<div class="footer2_area_copy">
 						<br>
 						<span style="color:#CCCCCC; font-size:13px">
-							© Copyright 2013, Sharp Eagle Eye. All Rights Reserved.
+							© Copyright 2014, Sharp Eagle Eye. All Rights Reserved.
 							<br><br>
 
 							<!--  Powered by <img src="assets/colorcuboid.png">&nbsp;Color Cuboid Design</span> -->
@@ -260,25 +252,3 @@
 
 				</div>
 			</div>
-
-			<script type="text/javascript">
-				$("#email").validate({
-					rules:{
-						'contact_us[first_name]':{
-							required: true,
-							minlength: 3
-						},
-						'contact_us[last_name]':{
-							required: true
-						},
-						'contact_us[email]':{
-							required: true,
-							email: true
-						},
-						'contact_us[comments]':{
-							required: true,
-							minlength: 6
-						}
-					}
-				});
-			</script>

@@ -15,5 +15,3 @@
 //= require turbolinks
 //= require owl.carousel
 //= require_tree .
-
-$(".owl-carousel").owlCarousel();

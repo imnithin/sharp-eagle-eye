@@ -2,7 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   
   EAGLE_EYE_URL = "http://sharp-eagle-eye.com"
-  EAGLE_EYE_URL = "http://50.63.202.39"
+  # EAGLE_EYE_URL = "http://50.63.202.39"
 
   # Code is not reloaded between requests.
   config.cache_classes = true

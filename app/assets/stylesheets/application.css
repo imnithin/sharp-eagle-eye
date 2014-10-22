@@ -20,63 +20,63 @@
 	/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+   */
 
-*= require owl.carousel
-*= require owl.theme
+   *= require owl.carousel
+   *= require owl.theme
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-	font-family: Tahoma;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+       margin: 0;
+       padding: 0;
+       border: 0;
+       font-size: 100%;
+       font: inherit;
+       vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+       display: block;
+   }
+   body {
+       line-height: 1;
+       font-family: Tahoma;
+   }
+   ol, ul {
+       list-style: none;
+   }
+   blockquote, q {
+       quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+       content: '';
+       content: none;
+   }
+   table {
+       border-collapse: collapse;
+       border-spacing: 0;
+   }
 
-a{
+   a{
     text-decoration: none;
-	 color:#FFFFE2;
+    color:#FFFFE2;
 }
 a:hover{
     color: #ffffff;
-    }
+}
 
 
 
@@ -93,22 +93,22 @@ a:hover{
 .header {
     float: left;
     width: 100%;
- background: #fff;
- height: 238px;
-	
+    background: #fff;
+    height: 238px;
+
 }
 
 .header_area{
     margin: 0 auto;
     width: 1024px;	
-	  
+
 }
 
 .header_1{
   margin: 0 auto;
-	 float: left;
-    width: 1024px;
-	 background: none repeat scroll 0 0 #ffffff;
+  float: left;
+  width: 1024px;
+  background: none repeat scroll 0 0 #ffffff;
 }
 .logo_area{
 	float: left;
@@ -117,12 +117,12 @@ a:hover{
     padding-bottom: 76px;
     padding-top: 20px;
     width: 400px;
-	background:#fff;
-	}
+    background:#fff;
+}
 .header_area_left{
-  
+
     float: right;
-  
+
     width: 266px;
 
 }
@@ -135,35 +135,35 @@ a:hover{
     padding-bottom: 11px;
     text-align: center;
     width: 70px;
-} */
-.call_us{
-margin-top: 10px;
-float:right;
-}
+    } */
+    .call_us{
+        margin-top: 10px;
+        float:right;
+    }
 
-.Menu{
-	float:left;
-}
+    .Menu{
+       float:left;
+   }
 
-#nav {
-     clear: both;
-    height: 13px;
-    margin: 0 auto
+   #nav {
+       clear: both;
+       height: 13px;
+       margin: 0 auto
 
-}
+   }
 
-#nav li a {
-   color: #ffffff;
-    float: left;
-    font-size: 11pt;
-    height: 32px;
-    padding-left: 26px;
-    padding-right: 33px;
-    padding-top: 18px;
- 
-}
+   #nav li a {
+     color: #ffffff;
+     float: left;
+     font-size: 11pt;
+     height: 32px;
+     padding-left: 26px;
+     padding-right: 33px;
+     padding-top: 18px;
 
-#nav li a:hover {
+ }
+
+ #nav li a:hover {
     background: none repeat scroll 0 0 #ffa500;
 }
 
@@ -185,10 +185,10 @@ float:right;
     width: 100%;
 }
 .menu{
-	 /* background-color: #b20000;*/
-      height: 50px;
-    margin: 0 auto;
-    width: 1024px;
+  /* background-color: #b20000;*/
+  height: 50px;
+  margin: 0 auto;
+  width: 1024px;
 }
 
 form {
@@ -242,9 +242,9 @@ form {
 }
 
 .img_part1_div {
-       float: left;
-    padding-bottom: 4px;
-    padding-top: 15px;
+ float: left;
+ padding-bottom: 4px;
+ padding-top: 15px;
 }
 
 .img_part1_div > p {
@@ -272,15 +272,15 @@ form {
 }
 .area2{
     float: left;
-     
+
     padding-top: 4%;
     width: 404px;
 }
 .img_part2{
 	float:left;
-	}
-  
-	
+}
+
+
 .border2 {
     border-bottom: 1px solid #ccc;
     padding-top: 30px;
@@ -295,8 +295,8 @@ form {
 }
 
 .img_part3 {
-	 float: left;
-	 padding-right: 16px;
+  float: left;
+  padding-right: 16px;
 }
 
 .p_content3 {
@@ -308,10 +308,10 @@ form {
 .search {
 	
   background-color: #E7E7E7;
-    border-radius: 15px;
-    float: left;
-    padding-left: 13px;
-    width: 172px;
+  border-radius: 15px;
+  float: left;
+  padding-left: 13px;
+  width: 172px;
 }
 
 .right_area{
@@ -341,7 +341,7 @@ table, td {
     background-color: #0b3754;
     /* border: 1px solid #fff; */
     border-collapse: collapse;
-	height: 25px;
+    height: 25px;
 }
 .first_td , thead tr{
 	background-color: #e2f4f6;
@@ -355,10 +355,10 @@ thead tr th {
 }
 table {
 	width: 1005px;
-	 font-size: 12px;
-	 border-spacing: 0;
-     margin-top: 0px;
-	 border-bottom:1px solid #fff;
+  font-size: 12px;
+  border-spacing: 0;
+  margin-top: 0px;
+  border-bottom:1px solid #fff;
 }
 tbody tr td{
 	padding-left: 15px;
@@ -379,7 +379,7 @@ tbody tr td{
     border-bottom: 1px solid #e6e6e6;
     float: left;
     padding-bottom: 10px;
-	 width: 100%;
+    width: 100%;
 }
 
 
@@ -396,13 +396,13 @@ tbody tr td{
 
 .readmore {
   background: none repeat scroll 0 0 #ff0000;
-    border-radius: 6px;
-    height: 27px;
-    margin-left: 0;
-    margin-top: 7px;
-    padding-left: 10px;
-    padding-top: 6px;
-    width: 105px;
+  border-radius: 6px;
+  height: 27px;
+  margin-left: 0;
+  margin-top: 7px;
+  padding-left: 10px;
+  padding-top: 6px;
+  width: 105px;
 }
 
 /*
@@ -411,9 +411,9 @@ tech support area
 */
 
 .techsupport_area{
-  
-margin :0 auto;
-width :100%;
+
+    margin :0 auto;
+    width :100%;
 }
 
 .techsupport{
@@ -430,37 +430,37 @@ width :100%;
 
 }
 .tech24{
-   background: none repeat scroll 0 0 #093653;
-    float: left;
-    height: 212px;
-    margin: 0 auto;
-    width: 61%;
+ background: none repeat scroll 0 0 #093653;
+ float: left;
+ height: 212px;
+ margin: 0 auto;
+ width: 61%;
 
 }
 
 .techsupport_blog{
   background: none repeat scroll 0 0 #093653;
-    border-left: 1px solid #cccccc;
-    float: right;
-    height: 211px;
-    margin-right: 19px;
-    width: 37%;
+  border-left: 1px solid #cccccc;
+  float: right;
+  height: 211px;
+  margin-right: 19px;
+  width: 37%;
 
 }
 .techsupport_comingsoon{
 
-margin: 0 auto;
-float:right;
-width:80%;	
-height:20%;
-margin-top:10px;
+    margin: 0 auto;
+    float:right;
+    width:80%;	
+    height:20%;
+    margin-top:10px;
 }
 
 .company_logo_area{
   padding-top: 10px;
-	float:left;
-	width:100%;
-	}
+  float:left;
+  width:100%;
+}
 
 .company_logo{
 	margin:0 auto;
@@ -473,63 +473,63 @@ margin-top:10px;
 
 }
 
-	.footer1{
-	  background-color: #04141e;
-    float: left;
-    height: 200px;
-    padding-top: 30px;
-    width: 100%;
-	}
+.footer1{
+ background-color: #04141e;
+ float: left;
+ height: 200px;
+ padding-top: 30px;
+ width: 100%;
+}
 
-	.footer_image{
+.footer_image{
 
     float: right;
     margin-top: 100px;
-	
-	}
-	
-	.footer1_area{
+
+}
+
+.footer1_area{
 	margin:0 auto;
 	width:1024px;
 	
-	  height: 197px;
-   
+ height: 197px;
+
 
 }
 
 .our_company{
-   
+
 
     margin: 0 auto;
     width: 22%;
-	float:left;
-	
+    float:left;
+
 
 }
 .support{
-   
+
     margin: 0 auto;
     width: 22%;
-	float:left;
-	margin-left:10px;
+    float:left;
+    margin-left:10px;
 
 }
 .service{
 
 
     margin: 0 auto;
-	margin-left:10px;
+    margin-left:10px;
     width: 22%;
-	float:left;
+    float:left;
 
 }
 .mainlinks{
- 
-  
+
+
     margin: 0 auto;
     width: 22%;
-	float:left;
-	 margin-left:10px;
+    float:left;
+    margin-left:10px;
 
 }
 .footer1_space{
@@ -543,11 +543,11 @@ margin-top:10px;
 {    
 	float:left;
 	width:100%; 
- background-color: #25292A;
+   background-color: #25292A;
    
 }
 .footer2_area{
- 
+
     margin: 0 auto;
     width: 1024px;
 
@@ -556,7 +556,7 @@ margin-top:10px;
 {
 
     float: left;
-  
+
     margin: 0 auto;
     width: 60%;
 }
@@ -564,10 +564,10 @@ margin-top:10px;
 .footer2_area_sociallinks
 {
 
-   padding-top: 16px;
-    float: right;
-    margin: 0 auto;
-       width: 14%;
+ padding-top: 16px;
+ float: right;
+ margin: 0 auto;
+ width: 14%;
 }
 
 .readmore > a:hover {
@@ -584,14 +584,14 @@ label {
     color: #ffffff;
 }
 
- .stripNav {
+.stripNav {
     bottom: 10px;
     margin: 0;
     position: absolute;
     right: 10px;
     z-index: 100;
 }
- .stripNav a {
+.stripNav a {
     background: -moz-linear-gradient(center top , #444444, #999999) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 0 solid #bbe3f2;
     border-radius: 3px;
@@ -609,13 +609,23 @@ label {
     text-decoration: none;
     width: 16px;
 } 
-
-
- .stripNavL, .stripNavR {
+.stripNavL, .stripNavR {
     opacity: 0.7;
     position: absolute;
     text-indent: -9000em;
     top: 120px;
     width: 20px;
     z-index: 120;
+}
+.address{
+    color: red;
+    background-color: whitesmoke;
+    width: 1005px;
+}
+.services{
+   background-color: whitesmoke; 
+}
+.services .content{
+    text-align: center;
+    margin-top: 2%
 }

@@ -110,11 +110,8 @@
   background:#fff;
 }
 .header_area_left{
-
   float: right;
-
-  width: 266px;
-
+  width: 300px;
 }
 /* .login_area{
 	 background-color: #333333;
@@ -617,7 +614,7 @@ label {
 }
 .services .content {
 text-align: center;
-margin-top: 2%;
+padding: 2%;
 font-size: larger;
 font-weight: bolder;
 }

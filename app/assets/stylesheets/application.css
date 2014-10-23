@@ -615,7 +615,9 @@ label {
 .services{
  background-color: whitesmoke; 
 }
-.services .content{
-  text-align: center;
-  margin-top: 2%;
+.services .content {
+text-align: center;
+margin-top: 2%;
+font-size: larger;
+font-weight: bolder;
 }

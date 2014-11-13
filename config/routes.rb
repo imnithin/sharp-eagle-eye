@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   constraints(:host => /^sharp-eagle-eye.com/) do
     root :to => redirect("http://www.sharp-eagle-eye.com")
-    match '/*path', :to => redirect {|params| "http://www.sharp-eagle-eye.com/#{params[:path]}"}
+    get '/*path', :to => redirect {|params| "http://www.sharp-eagle-eye.com/#{params[:path]}"}
   end
 
   root 'home#index'

@@ -3,6 +3,11 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  constraints(:host => /^sharp-eagle-eye.com/) do
+    root :to => redirect("http://www.sharp-eagle-eye.com")
+    match '/*path', :to => redirect {|params| "http://www.sharp-eagle-eye.com/#{params[:path]}"}
+  end
+
   root 'home#index'
 
   # Example of regular route:
@@ -15,7 +20,7 @@ Rails.application.routes.draw do
     resources :home
     resources :services
     resources :gallery
-    resources :contact do 
+    resources :contact do
       collection do
         post 'send_mail'
       end

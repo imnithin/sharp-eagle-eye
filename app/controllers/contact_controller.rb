@@ -4,6 +4,6 @@ class ContactController < ApplicationController
 	 end
 	 def send_mail
 	 	ContactUsMailer.contact(params[:contact_us]).deliver
-	 	redirect_to root_path, notice: "Mail sent successfully"
+	 	redirect_to root_path, notice: "Mail sent successfully!"
 	 end
 end
